@@ -1,0 +1,7 @@
+Array always pass by address, not reference nor value;
+
+void fun(int arr[], size){
+	//code;
+}
+
+**We can't use foreach loop into a pointer, we can use it in array. 
