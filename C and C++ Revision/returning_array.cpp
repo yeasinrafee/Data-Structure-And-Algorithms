@@ -26,7 +26,7 @@ int main(){
 		cout<<ptr[i]<<" ";
 	}
 
-	delete []ptr;	//Free the heap memory in c++
+	delete[] ptr;	//Free the heap memory in c++
 	//free(ptr);		//Free the memory in c;
 
 	return 0;
