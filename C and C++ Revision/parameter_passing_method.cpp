@@ -19,11 +19,20 @@ void swap2(int *a, int *b){
 	*b = temp;
 }
 
+//pass by references:
+void swap3(int &a, int &b){	  //It'll be an inline function
+	int temp;
+	temp = a;
+	a = b;
+	b = temp;
+}
+
 int main(){
 	
 	int num1 = 1, num2 = 9;
 	// swap1(num1, num2);	//It'll not work, for passing by value
-	swap2(&num1, &num2);
+	// swap2(&num1, &num2);	//It'll work fine :)
+	swap3(num1, num2);
 
 	cout<<"Number-1: "<<num1<<endl<<"Number-2: "<<num2<<endl;
 
