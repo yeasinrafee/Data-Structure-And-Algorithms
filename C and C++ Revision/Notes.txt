@@ -1,3 +1,16 @@
+
+{
+	**Dynamically Allocating Memory using c and c++:
+		int *ptr;
+
+		ptr = (int*)malloc(sizeof(size));	// "C"
+		ptr = new int[size];		//"C++"
+
+		free(ptr);		//free the memory using C
+		delete ptr; 	//free the memory using C++
+		delete[] ptr;	//free the block of memory using C++
+}
+
 Array always pass by address, not reference nor value;
 
 void fun(int arr[], size){
