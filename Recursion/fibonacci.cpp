@@ -17,9 +17,14 @@ int fib(int n){
 	return s;
 }
 
+int rfib(int n){
+	if(n <= 1) return n;
+	return rfib(n - 2) + rfib(n - 1);
+}
+
 int main(){
 	
-	cout<<fib(6)<<endl;
+	cout<<rfib(6)<<endl;
 
 	return 0;
 }
