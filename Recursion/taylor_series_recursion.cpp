@@ -3,9 +3,9 @@ using namespace std;
 
 const int N = 0;
 
-int e(int x, int n){
-	static int p = 1, f = 1;
-	int r;
+double e(int x, int n){
+	static double p = 1, f = 1;
+	double r;
 	if(n == 0)
 		return 1;
 	else{
@@ -17,8 +17,9 @@ int e(int x, int n){
 }
 
 int main(){
-	int t = e(2, 3);
-	cout<<t<<endl;
+	double t = e(4, 15);
+	// cout<<t<<endl;
+	printf("%lf\n", t);
 
 	return 0;
 }
